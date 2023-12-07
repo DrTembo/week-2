@@ -1,0 +1,153 @@
+* {
+   padding: 10px;
+   padding-top: 5px;
+}
+
+.accent {
+    color: rgb(249, 234, 216);
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h3,h4 {
+    text-transform: uppercase;
+    text-decoration: antiquewhite;
+    letter-spacing: .7px;
+}
+
+.main {
+   display: flex;
+   gap: 10px;
+}
+
+.tabcontent {
+    margin-top: 5px;
+    padding: auto;
+    color: white;
+    font-weight: 600;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(88, 86, 86);
+}
+
+.tabcontent p, .container p { font-size: larger;}
+
+body {
+    display: inline-block;
+          max-height: fit-content;
+   border: azure;
+   margin: 3px;
+   background-image: url(patterns.png);
+   background-position: center;
+   background-repeat: repeat;  
+}
+ .background-image {
+    display: inline-block;
+   border: azure;
+   margin: 5px;
+       background-image: url(untitled\ \(1\ of\ 1\).jpg);
+        background-repeat: repeat-x;
+        background-size: contain;   
+       background-position: center;
+  }
+
+header {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;}
+ 
+nav ul { list-style: none;}
+ 
+ nav ul li {
+    display: inline-block;
+    margin-right: 2rem; }
+ 
+ nav ul li a {
+    text-decoration: none;
+    color: rgb(248, 123, 227);
+    font-weight: 900;
+    font-size: x-large; }
+
+ .btn {  display: none; }
+
+.hero {
+    display: grid;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: space-around;  }
+
+.Project {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: space-around;
+    margin-top: 3px;    }
+
+    .info  { display: flex; }
+
+.form { border-radius: 6%;
+        margin-left: 45%;}
+
+@media screen and (max-width: 1000px) {
+    /* header nav { display: none;} */
+    /* .btn { display: inline-block;}  */
+
+        * { padding: 2px;}
+        .Topnav {display: flex;
+        }
+     header { display: flex;
+        gap: 5px;    }
+
+    nav ul li a {
+        font-weight: 600;
+        font-size: large; }
+
+    .main {display: grid;
+    grid-template-columns: 1fr;
+padding-left: 37px; }
+
+    .Project{ display: grid;
+        grid-template-columns: 100%;
+        gap: 1px;}
+
+    header { margin-bottom: .5px;}
+    .accent, h1, h2 {
+        color: black;
+        font-weight: 500;
+    font-size: large;
+    text-align: start; 
+}
+
+    h1,h2 {margin-bottom: 3rem;
+    font-weight: 600 ;
+     font-size: larger;}
+
+    h1 { text-transform: uppercase;}
+    h2 { text-transform: capitalize;}
+
+    .background-image {
+        background-image: url(patterns.png);
+   background-position: center;
+   background-repeat: repeat;   }
+
+    .tabcontent { margin-top: 1px; }
+    .hero {       color: black;
+                  margin-top: .5px; }
+}
